@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
-
+:root {
+  --shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.25);
+  --align: center;
+  --column: column;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-position: center;
+  flex-direction: var(--column);
+  align-items: var(--align);
+  background-position: var(--align);
   background-size: cover;
   margin-top: 10px;
-  box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
 }
 
 h1 {
@@ -25,32 +29,32 @@ h2 {
 }
 
 #navigation {
-  box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
 }
 
 .header-wrap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: var(--column);
+  align-items: var(--align);
+  justify-content: var(--align);
 }
 
 .main-wrap {
   height: 1500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.25);
+  flex-direction: var(--column);
+  align-items: var(--align);
+  justify-content: var(--align);
+  box-shadow: var(--shadow);
 }
 
 .main-wrap div {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: var(--column);
+  align-items: var(--align);
+  justify-content: var(--align);
 }
 
 .about {
@@ -59,9 +63,9 @@ h2 {
       rgba(222, 113, 24, 0.5),
       rgba(102, 159, 186, 0.5)
     ),
-    url(main-background.jpg);
+    url(Images/main-background.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: var(--align);
   height: 350px;
 }
 
@@ -71,8 +75,8 @@ h2 {
       rgba(14, 14, 14, 0.5),
       rgba(177, 177, 177, 0.5)
     ),
-    url(UTMB.jpg);
-  background-position: center;
+    url(Images/UTMB.jpg);
+  background-position: var(--align);
   background-size: cover;
 }
 
@@ -82,8 +86,8 @@ h2 {
       rgba(33, 138, 189, 0.5),
       rgba(230, 199, 106, 0.5)
     ),
-    url(pyrennees.jpg);
-  background-position: center;
+    url(Images/pyrennees.jpg);
+  background-position: var(--align);
   background-size: cover;
 }
 
@@ -93,7 +97,7 @@ h2 {
       rgba(6, 67, 114, 0.59) 0%,
       rgba(149, 148, 148, 0.5) 100%
     ),
-    url(reunion.jpg);
+    url(Images/reunion.jpg);
   background-position: bottom;
   background-size: cover;
 }
@@ -101,7 +105,7 @@ h2 {
 footer {
   margin-top: 10px;
   background-color: bisque;
-  box-shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
 }
 
 .footer-wrap {
