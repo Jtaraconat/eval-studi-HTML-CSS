@@ -1,0 +1,116 @@
+<<<<<<< Updated upstream
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+  --controlWidth: 15%;
+  --bgColor: black;
+  --border: none;
+  --shadow: 8px 8px 10px 1px rgba(0, 0, 0, 0.25);
+  --align: var(--align);
+  --column: column;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: var(--column);
+  align-items: var(--align);
+  background-position: var(--align);
+  background-size: cover;
+  margin-top: 10px;
+  box-shadow: var(--shadow);
+}
+.header-wrap {
+  display: flex;
+  flex-direction: var(--column);
+  align-items: var(--align);
+  justify-content: var(--align);
+}
+h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#navigation {
+  box-shadow: var(--shadow);
+}
+
+.reunion {
+  background: linear-gradient(
+      90deg,
+      rgba(6, 67, 114, 0.59) 0%,
+      rgba(149, 148, 148, 0.5) 100%
+    ),
+    url(Images/reunion.jpg);
+  background-position: var(--align);
+  background-size: cover;
+
+  height: 450px;
+}
+
+#main-content {
+  box-shadow: var(--shadow);
+  width: auto;
+}
+
+.main-wrap {
+  height: auto;
+}
+
+#carousel {
+  box-shadow: var(--shadow);
+}
+
+.carousel-control-prev {
+  width: var(--controlWidth);
+  background-color: var(--bgColor);
+  border-style: var(--border);
+}
+
+.carousel-control-next {
+  width: var(--controlWidth);
+  background-color: var(--bgColor);
+  border-style: var(--border);
+}
+
+footer {
+  margin-top: 10px;
+  background-color: bisque;
+  box-shadow: var(--shadow);
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 9rem;
+    font-weight: 350;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+>>>>>>> Stashed changes
